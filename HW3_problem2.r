@@ -1,3 +1,14 @@
+#Problem 2e
+library(expm)
+
+P <- matrix(c(9/10, 1/10, 0,
+              0, 7/8, 1/8,
+              2/5, 0, 3/5),nrow=3, byrow=TRUE)
+
+n<-50
+P_power <- P%^%n
+print(P_power)
+
 #Problem 2f
 n <- 10000
 
